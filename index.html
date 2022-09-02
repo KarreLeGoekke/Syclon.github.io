@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" conent="IE-edge">
+    <meta name="viewport" conent="width-device-width, initial-scale = 1.0">
+    <title>Syclon's Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<script>
+    function discord() {
+      window.open("https://discord.com/users/174581354850156544", "_blank")
+    }
+
+    function steam() {
+      window.open("https://steamcommunity.com/profiles/76561198297105476/", "_blank")
+    }
+
+    function gamebanana(){
+        window.open("https://gamebanana.com/members/1480353", "_blank")
+    }
+
+    function projects(){
+        window.open("projects.html", "_self", false)
+    }
+
+    function toHome() {
+      window.open("index.html", "_self", false)
+    }
+</script>
+
+<link rel="Icon" href="Favicon.png">
+
+<style>
+    body {
+        background-image: radial-gradient(ellipse at center, rgb(64, 64, 64), rgb(32, 32, 32));
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div id="header">
+        <header>
+            <img onclick = "toHome()"; src="Favicon.png" class="startButton" style="position:relative; left:50%; transform: translate(-50%, -5%); margin-top: 15px;">
+        </header>
+    </div>
+    <div>
+        <h1 class = "rainbowOutline";>Syclon</h1>
+        <p>Swedish Contributor, Mapper, and (amateur) 3D Modeler</p>
+    </div>
+
+    <div class = "blocks">
+        <div onclick="discord()"; class="block"; style="background-color: #7289da;">
+            <img src="discord.svg" width="100" height="100" style = "margin:15px">
+            <div class = "blockText";>
+                Discord
+            </div>
+        </div>
+
+        <div onclick="steam()"; class="block"; style="background-color: #171a21;">
+            <img src="steam.svg" width="100" height="100" style = "margin:15px">
+            <div class = "blockText";>
+                Steam
+            </div>
+        </div>
+
+        <div onclick="gamebanana()"; class="block"; style="background-color: #c4b31d;">
+            <img src="Gamebanana.png" width="100" height="100" style = "margin:15px">
+            <div class = "blockText";>
+                Gamebanana
+            </div>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div class = "longblocks";>
+        <div class = "longblock">
+            <div onclick = "projects()"; class = "longblockText">
+                Projects
+            </div>
+        </div>
+    </div>
+</body>
+</html>
