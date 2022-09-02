@@ -1,0 +1,290 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    font-size:24px;
+    font-family: Segoe UI;
+    text-align: center;
+    color:white;
+    outline-width:thick;
+    outline-color:black;
+}
+
+h1 {
+    font-size:64px;
+    font-family: "Segoe UI Light";
+    text-align: center;
+    color:white;
+    outline-width:thin;
+    outline-color:black;
+    margin-left: 5px
+}
+.rainbow{
+    animation: rainbow 10s linear;
+    animation-iteration-count: infinite;
+}
+
+.rainbowOutline {
+    color:white;
+    text-shadow: 0 0 10px;
+    animation: rainbowOutline 10s linear;
+    animation-iteration-count: infinite;
+}
+
+.center {
+    margin: 15;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+.list{
+    margin: 15;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -90%);
+    transform: translate(-50%, -90%);
+}
+
+.blocks{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display:flex
+}
+
+.longblocks{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display:flex
+}
+
+.block{
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    margin: 25px;
+    border-radius: 10px;
+    background-color: white;
+    transition: ease-out, 0.25s;
+
+    text-align:center;
+}
+
+.longblock{
+    cursor: pointer;
+    width: 605px;
+    height: 128px;
+    padding: 5px;
+    margin: 25px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    background-color: white;
+    transition: ease-out, 0.25s;
+
+    text-align:center;
+}
+
+.blockText{
+    font-size:24px;
+    font-family: Segoe UI;
+    font-weight: bolder;
+    text-align: center;
+    color:white;
+    transform: translateY(-50%);
+}
+
+.longblockText{
+    font-size:48px;
+    font-family: Segoe UI;
+    font-weight: bolder;
+    text-align: center;
+    color:black;
+    transform: translateY(50%);
+}
+
+.block:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 0px 25px 5px rgb(32, 32, 32);
+}
+
+.longblock:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 0px 25px 5px rgb(32, 32, 32);
+}
+
+img.startButton{
+    cursor: pointer;
+    transition: ease-out, 0.25s; 
+}
+
+img.startButton:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.projectsGrid{
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    display:flex;
+    flex-wrap:wrap;
+    margin: 25px;
+}
+
+project{
+    margin: 10px;
+    padding: 5px;
+    width: 384px;
+    height: 256px;
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.25);
+    border: 10px solid rgba(128, 128, 128, 0.25);
+    cursor: pointer;
+    transition: ease-in-out, 0.25s;
+}
+
+project:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px, 0px, 25px, 5px, rgb(255, 255, 255);
+}
+
+.projectImage{
+    width:384px;
+    height:192px;
+    object-fit:cover;
+}
+
+.projectHeader{
+    font-size:24px;
+    font-family: "Segoe UI Light";
+    text-align: left;
+    color:white;
+    font-weight: bolder;
+}
+
+.projectDesc{
+    font-size:16px;
+    font-family: "Segoe UI Light";
+    text-align: left;
+    color:white;
+    font-weight: lighter;
+}
+
+.projectLogo{
+    width: 64px;
+    transform: translate(500%, -85%);
+}
+
+article{
+    display:flex;
+    align-items:flex-start;
+    margin: 50px;
+    padding: 25px;
+    width:auto;
+    height: fit-content;
+    border-radius: 25px;
+    background-color: rgba(32, 32, 32, 0.25);
+    border: 25px solid rgba(128, 128, 128, 0.25);
+}
+
+.articleImage{
+    width:512px;
+    height:384px;
+    object-fit:cover;
+}
+
+header{
+    background-color: rgb(32, 32, 32);
+    box-shadow:0px 0px 25px 5px rgb(0, 0, 0)
+}
+
+@keyframes rainbow{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{
+        background-color: rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+}
+
+@keyframes rainbowOutline{
+    100%,0%{
+        text-shadow: 0 0 15px rgb(255,0,0);
+    }
+    8%{
+        text-shadow: 0 0 15px rgb(255,127,0);
+    }
+    16%{
+        text-shadow: 0 0 15px rgb(255,255,0);
+    }
+    25%{
+        text-shadow: 0 0 15px rgb(127,255,0);
+    }
+    33%{
+        text-shadow: 0 0 15px rgb(0,255,0);
+    }
+    41%{
+        text-shadow: 0 0 15px rgb(0,255,127);
+    }
+    50%{
+        text-shadow: 0 0 15px rgb(0,255,255);
+    }
+    58%{
+        text-shadow: 0 0 15px rgb(0,127,255);
+    }
+    66%{
+        text-shadow: 0 0 15px rgb(0,0,255);
+    }
+    75%{
+        text-shadow: 0 0 15px rgb(127,0,255);
+    }
+    83%{
+        text-shadow: 0 0 15px rgb(255,0,255);
+    }
+    91%{
+        text-shadow: 0 0 15px rgb(255,0,127);
+    }
+}
