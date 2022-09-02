@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" conent="IE-edge">
+    <meta name="viewport" conent="width-device-width, initial-scale = 1.0">
+    <title>Syclon's Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<script>
+    function toHome() {
+      window.open("index.html", "_self", false)
+    }
+
+    function toSite(name) {
+        window.open(name, "_self", false)
+    }
+</script>
+
+<link rel="Icon" href="Favicon.png">
+
+<style>
+    body {
+        background-image: radial-gradient(ellipse at center, rgb(64, 64, 64), rgb(32, 32, 32));
+        margin: 0;
+    }
+</style>
+
+<body>
+    <header>
+        <img onclick = "toHome()"; src="Favicon.png" class="startButton" style="position:relative; left:50%; transform: translate(-50%, -5%); margin-top: 15px;">
+    </header>
+    <div>
+        <h1 class = "rainbowOutline";>Projects</h1>
+        <p>This is where you can find my projects.</p>
+    </div>
+</body>
+
+<body>
+    <div class = "projectsGrid">
+        <project onclick="toSite('Projects/pandora.html')">
+            <img class= "projectImage"; src="projects/pandora.jpg">
+            <div class = "projectHeader">
+                dr_pandoralab
+            </div>
+            <div class = "projectDesc">
+                A multidimentional deathmap!
+            </div>
+            <img class="projectLogo" src="projects/TF2.png">
+        </project>
+    </div>
+</body>
+</html>
