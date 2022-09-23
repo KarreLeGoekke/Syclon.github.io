@@ -186,6 +186,24 @@ header{
     box-shadow:0px 0px 25px 5px rgb(0, 0, 0)
 }
 
+.spoiler{
+    filter: blur(10px);
+    transition: ease-in-out, 0.25s;
+}
+
+li{
+    font-size:24px;
+    font-family: Segoe UI;
+    text-align: left;
+    color:white;
+    outline-width:thick;
+    outline-color:black;
+}
+
+.spoiler:hover{
+    filter: blur(0px);
+}
+
 @keyframes rainbow{
     100%,0%{
         background-color: rgb(255,0,0);
