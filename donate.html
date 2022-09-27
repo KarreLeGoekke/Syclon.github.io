@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" conent="IE-edge">
+    <meta name="viewport" conent="width-device-width, initial-scale = 1.0">
+    <title>Syclon's Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<script>
+    function paypal() {
+        window.open("https://paypal.me/GalangaLolHabibi", "_blank")
+    }
+    
+    function patreon() {
+        window.open("https://www.patreon.com/Syclon", "_blank")
+    }
+
+    function steamtrade() {
+        window.open("https://steamcommunity.com/tradeoffer/new/?partner=336839748&token=IGvQ_fIk", "_blank")
+    }
+
+    function toHome() {
+      window.open("index.html", "_self", false)
+    }
+</script>
+
+<link rel="Icon" href="Favicon.png">
+
+<style>
+    body {
+        background-image: radial-gradient(ellipse at center, rgb(64, 64, 64), rgb(32, 32, 32));
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div id="header">
+        <header>
+            <img onclick = "toHome()"; src="Favicon.png" class="startButton" style="position:relative; left:50%; transform: translate(-50%, -5%); margin-top: 15px;">
+        </header>
+    </div>
+    <div>
+        <h1 class = "rainbowOutline";>Donation</h1>
+        <p>I would be very thankful if you would donate me, whether it would be real money, or in-game items, as it will help with my work.</p>
+    </div>
+
+    <div class = "blocks">
+        <div onclick="paypal()"; class="block"; style="background-color: #003087;">
+            <img src="Paypal.png" width="100" height="100" style = "margin:15px; filter: invert(100%)">
+            <div class = "blockText";>
+                PayPal
+            </div>
+        </div>
+
+        <div onclick="patreon()"; class="block"; style="background-color: #f96854;">
+            <img src="Patreon.png" width="100" height="100" style = "margin:15px;">
+            <div class = "blockText";>
+                Patreon
+            </div>
+        </div>
+
+        <div onclick="steamtrade()"; class="block"; style="background-color: #171a21;">
+            <img src="steam.svg" width="100" height="100" style = "margin:15px">
+            <div class = "blockText";>
+                Steam Trade
+            </div>
+        </div>
+    </div>
+</body>
+</html>
